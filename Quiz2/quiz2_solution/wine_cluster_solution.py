@@ -19,9 +19,10 @@ pass
 fill the array allSamples to hold the samples, each sample
 takes two attributes of an iris instance
 """
+data = data[1:]
 for line in data:
     content = line.strip().split(",")
-    d = sample.Sample('', [float(content[1]), float(content[3])])
+    d = sample.Sample('', [float(content[0]), float(content[4])])
     allSamples.append(d)
 # ---- end of your code --- #
 
